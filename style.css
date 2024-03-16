@@ -4,6 +4,17 @@ body {
     background-image: url('bg-image.jpeg');
     background-size: cover;
     margin: 0;
+    font-family:'Courier New', Courier, monospace;
+}
+
+input {
+    border: 1px solid rgb(100 100 100);
+    border-radius: 2px;
+    background-color: rgb(255 255 255 / 30%);
+}
+
+input[type=range] {
+    border-radius: 0px;
 }
 
 .header {
@@ -12,7 +23,6 @@ body {
     justify-content: center;
     font-weight: bold;
     font-size: 16px;
-    font-family:'Courier New', Courier, monospace;
     text-align: center;
     width: 33vw;
     height: 100vh;
@@ -41,6 +51,35 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: left;
+}
+
+button {
+    margin: 16px 48px; 
+    width: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-color: aliceblue;
+    min-height: 25px;
+    box-shadow: 0px 0px 4px 4px rgb(0 0 0 / 10%);
+    border: 0px
+}
+
+button:hover {
+    background-color: cadetblue;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 200px;
+    justify-content: left;
+    margin: 16px 48px; 
+}
+
+#budget_field {
+    flex-basis: 500px;
 }
 
 #header-row {
